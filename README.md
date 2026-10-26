@@ -1,5 +1,9 @@
 # Set Menu Price Calculator
 
+## Where to start
+
+The entry point is `CalculatePrice` in [shop/calculator.go](shop/calculator.go).
+Read it first, then the tests in [shop/calculator_test.go](shop/calculator_test.go) show each pricing rule as an example.
 
 ## Running the tests
 
@@ -46,9 +50,9 @@ The shop can change the menu on a `PriceCalculator`:
 
 ```
 shop/
-├── order.go        Order and OrderItem; merges repeated items
-├── menu.go         Default menu and menu management
-├── price.go        Price calculation and discounts
-├── price_test.go   Tests for pricing rules
-└── menu_test.go    Tests for menu management
+├── calculator.go        Price calculation and discounts (start here)
+├── calculator_test.go   Tests for pricing rules
+├── menu.go              Default menu and menu management
+├── menu_test.go         Tests for menu management
+└── order.go             Order and OrderItem; merges repeated items
 ```
